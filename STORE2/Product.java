@@ -4,14 +4,14 @@ public class Product {
 	private double price;
 	private int quantity;
 
-  private Product(ProductBuilder builder) {
-    this.productID = builder.productID;
-    this.name = builder.name;
-    this.price = builder.price;
-    this.quantity = builder.quantity;
-  }
+	private Product(ProductBuilder builder) {
+		this.productID = builder.productID;
+		this.name = builder.name;
+		this.price = builder.price;
+		this.quantity = builder.quantity;
+	}
   
-  public String getProdID() {
+	public String getProdID() {
 		return productID;
 	}
 	
@@ -38,7 +38,7 @@ public class Product {
 public static class ProductBuilder {
     private final String productID;
 	private final String name;
-	private double price = 0.0;
+	private double price = 0.00;
 	private int quantity = 0;
 
     public ProductBuilder(String productID, String name) {
